@@ -25,6 +25,16 @@
 /* Begin PBXFileReference section */
 		FB507B282AA0CB6B0030CDCA /* Ray_Tracing_1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Ray_Tracing_1; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB507B2B2AA0CB6B0030CDCA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FB507B322AA0D6120030CDCA /* vec3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vec3.h; sourceTree = "<group>"; };
+		FB507B332AA0DF6D0030CDCA /* color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = color.h; sourceTree = "<group>"; };
+		FB507B342AA0E1C10030CDCA /* ray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ray.h; sourceTree = "<group>"; };
+		FB507B352AA227DA0030CDCA /* hittable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hittable.h; sourceTree = "<group>"; };
+		FB507B362AA227E20030CDCA /* sphere.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sphere.h; sourceTree = "<group>"; };
+		FB507B372AA22F370030CDCA /* hittable_list.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hittable_list.h; sourceTree = "<group>"; };
+		FB507B382AA231280030CDCA /* rtweekend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = rtweekend.h; sourceTree = "<group>"; };
+		FB507B392AA2BF360030CDCA /* interval.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = interval.h; sourceTree = "<group>"; };
+		FB507B3A2AA2C2E10030CDCA /* camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
+		FB507B3B2AA2EA870030CDCA /* material.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = material.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,16 @@
 			isa = PBXGroup;
 			children = (
 				FB507B2B2AA0CB6B0030CDCA /* main.cpp */,
+				FB507B322AA0D6120030CDCA /* vec3.h */,
+				FB507B332AA0DF6D0030CDCA /* color.h */,
+				FB507B342AA0E1C10030CDCA /* ray.h */,
+				FB507B352AA227DA0030CDCA /* hittable.h */,
+				FB507B362AA227E20030CDCA /* sphere.h */,
+				FB507B372AA22F370030CDCA /* hittable_list.h */,
+				FB507B382AA231280030CDCA /* rtweekend.h */,
+				FB507B392AA2BF360030CDCA /* interval.h */,
+				FB507B3A2AA2C2E10030CDCA /* camera.h */,
+				FB507B3B2AA2EA870030CDCA /* material.h */,
 			);
 			path = Ray_Tracing_1;
 			sourceTree = "<group>";

@@ -1,0 +1,40 @@
+//
+//  hittable.h
+//  Ray_Tracing_1
+//
+//  Created by 許熙康 on 2023/9/1.
+//
+
+#ifndef hittable_h
+#define hittable_h
+
+#include "rtweekend.h"
+
+class material;
+
+class hit_record {
+public:
+    point3 p;
+    vec3 normal;
+    double t;
+    bool front_face;
+    shared_ptr<material> mat;
+    
+    void set_face_normal(const ray& r, const vec3& outward_normal) {
+        // Sets the normal vector to always point against the ray
+        // NOTE: outward normal is assumed to have unit length
+        
+        front_face = dot(r.direction(), outward_normal) < 0;
+        normal = front_face ? outward_normal : -outward_normal;
+    }
+};
+
+class hittable {
+public:
+    virtual ~hittable() = default;
+    
+    virtual bool hit(const ray& r, interval ray_t, hit_record& rec) const = 0;
+};
+
+
+#endif /* hittable_h */
